@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  background-color: rgba(26, 26, 26, 255);
+}
+#logo {
+  margin: 30px;
+}
+h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+nav {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  height: 80px;
+}
+ul {
+    margin-top: 50px;
+    margin-right: 60px;
+  text-decoration: none;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  list-style: none;
+}
+a {
+  cursor: pointer;
+}
+.nav-item {
+  color: rgba(26, 26, 26, 255);
+  border-radius: 5%;
+  background-color: rgba(202, 225, 52, 255);
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+.nav-item:hover {
+  background-color: rgba(126, 141, 31, 255);
+}
+
+main {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+h2 {
+  color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+span {
+  color: rgba(202, 255, 51, 255);
+}
+#show {
+  margin: 20px;
+  color: rgba(202, 255, 51, 255);
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: unset;
+  animation-direction: normal;
+}
+#texto2 {
+  margin-top: 100px;
+  width: 600px;
+}
+@keyframes aparecer {
+  from {
+    margin-left: 800px;
+    color: #92e082;
+  }
+  to {
+    margin-left: 0px;
+    color: rgba(202, 255, 51, 255);
+  }
+}
+#clique {
+  margin-top: 80px;
+}
+#clique-txt:hover {
+  animation-name: saltar;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes saltar {
+  from {
+  }
+  to {
+    color: rgba(202, 255, 51, 255);
+    animation-name: desaltar;
+    animation-duration: 1s;
+    animation-iteration-count: unset;
+    animation-direction: normal;
+  }
+}
+@keyframes desaltar {
+  to {
+    color: #fff;
+  }
+}

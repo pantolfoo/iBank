@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.fonte-maior {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+body {
+  background-color: rgba(26, 26, 26, 255);
+}
+#logo {
+  margin: 30px;
+}
+h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+nav {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  height: 80px;
+}
+ul {
+    margin-top: 50px;
+    margin-right: 60px;
+  text-decoration: none;
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+  list-style: none;
+}
+a {
+  cursor: pointer;
+}
+.nav-item {
+  color: rgba(26, 26, 26, 255);
+  border-radius: 5%;
+  background-color: rgba(202, 225, 52, 255);
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+.nav-item:hover {
+  background-color: rgba(126, 141, 31, 255);
+}
+span {
+  color: rgba(202, 255, 51, 255);
+}
+#main-txt {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+#planos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 8%;
+    margin-top: 20px;
+}
+.plano {
+  background-image: linear-gradient(
+    135deg,
+    rgba(202, 255, 51, 255),
+    rgb(76, 204, 26),
+    rgba(202, 255, 51, 255)
+  ); /* Degradê linear com várias cores e ângulo */
+  height: 200px;
+  width: 300px;
+  border-radius: 5%;
+}
+.plano-container {
+  width: 300px;
+  height: 500px;
+  border-radius: 5%;
+  border: solid 1px white;
+}
+#nome-plano {
+  color: #fff;
+  padding: 20px;
+}
+hr{
+    width: 250px;
+}
+.plano-itens {
+    width: 280px;
+    height: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
