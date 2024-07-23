@@ -29,3 +29,61 @@ ul {
 h1 {
     font-size: 2rem;
 }
+.menu-mobile {
+    display: block; 
+}
+
+.menu-icon {
+    display: block; 
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    width: 30px; 
+    cursor: pointer;
+}
+
+.nav-mobile {
+    display: none; 
+    list-style: none; 
+    padding: 0;
+    background-color: #f0f0f0; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    z-index: 10; 
+}
+
+.nav-mobile.active {
+    display: block; 
+}
+
+.nav-mobile li {
+    margin-bottom: 10px; 
+}
+
+.nav-mobile a {
+    display: block; 
+    padding: 10px;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+nav ul {
+    display: none; 
+}
+.menu-mobile {
+    display: flex;
+    flex-direction: column; /* Itens em coluna (um abaixo do outro) */
+    align-items: flex-start; /* Alinhamento à esquerda */
+}
+
+.nav-mobile {
+    display: none; /* Menu móvel oculto por padrão */
+    list-style: none;
+    margin: 10px 0 0; /* Adiciona uma pequena margem superior */
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
